@@ -156,7 +156,7 @@ exports[`<Movies /> when movies is empty  should render correctly 1`] = `
         <h5
           class="MuiTypography-root MuiTypography-h5 css-ag7rrr-MuiTypography-root"
         >
-          No Movie(s) with the title "" found
+          No Movie found matching the specified text
         </h5>
       </div>
     </div>

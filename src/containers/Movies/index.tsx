@@ -22,7 +22,7 @@ export const Movies: React.FC = () => {
         }
 
         if (!movies.length) {
-            return <MessageBox text={`No Movie(s) with the title "${searchText}" found`} />;
+            return <MessageBox text="No Movie found matching the specified text" />;
         }
 
         return movies.map((movie) => <MovieCard movie={movie} key={movie.imdbID} />);
