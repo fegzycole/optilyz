@@ -1,5 +1,5 @@
 import { Dispatch } from 'react';
-import { MovieData, SetMovies, SET_MOVIES, SetError, SET_ERROR } from './types';
+import { MovieData, SetMovies, SET_MOVIES, SetError, SET_ERROR, SetFetchingMovies, SET_FETCHING_MOVIES } from './types';
 import axios from 'axios';
 
 const apiKey = process.env.REACT_APP_API_KEY;
@@ -19,11 +19,19 @@ export const setError = (payload: string): SetError => {
     };
 };
 
+export const setFetchingMovies = (payload: boolean): SetFetchingMovies => {
+    return {
+        type: SET_FETCHING_MOVIES,
+        payload,
+    };
+};
+
 export const getMovies = (
     searchText: string,
 ): ((dispatch: Dispatch<{ type: string; payload?: unknown }>) => Promise<void>) => {
     return async (dispatch) => {
         dispatch(setError(''));
+        dispatch(setFetchingMovies(true));
 
         try {
             const request = await axios.get(`${apiUrl}?s=${searchText}&apikey=${apiKey}`);

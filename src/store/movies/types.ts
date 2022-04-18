@@ -1,5 +1,6 @@
 export const SET_MOVIES = 'SET_MOVIES';
 export const SET_ERROR = 'SET_ERROR';
+export const SET_FETCHING_MOVIES = 'SET_FETCHING_MOVIES';
 
 export interface MovieData {
     imdbID: string;
@@ -25,4 +26,9 @@ export interface SetError {
     payload: string;
 }
 
-export type MoviesActionTypes = SetMovies | SetError;
+export interface SetFetchingMovies {
+    type: typeof SET_FETCHING_MOVIES;
+    payload: boolean;
+}
+
+export type MoviesActionTypes = SetMovies | SetError | SetFetchingMovies;
