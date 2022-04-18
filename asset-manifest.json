@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/optilyz/static/css/main.d44a1ec1.css",
+    "main.js": "/optilyz/static/js/main.2972cb2c.js",
+    "index.html": "/optilyz/index.html",
+    "main.d44a1ec1.css.map": "/optilyz/static/css/main.d44a1ec1.css.map",
+    "main.2972cb2c.js.map": "/optilyz/static/js/main.2972cb2c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d44a1ec1.css",
+    "static/js/main.2972cb2c.js"
+  ]
+}
