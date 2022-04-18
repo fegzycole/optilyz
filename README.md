@@ -45,4 +45,4 @@
 
 ## Video Description
 
--   [Link to the a video briefly describing the project](https://www.loom.com/share/ab14fcaa897e4ba2b02e12cefd3577c7)
+-   [Link to a video briefly describing the project](https://www.loom.com/share/ab14fcaa897e4ba2b02e12cefd3577c7)
