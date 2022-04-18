@@ -4,7 +4,7 @@
 
 ### Frontend Implementation With ReactJS
 
-[Build Version](https://optilyz-dev-challenge.herokuapp.com/)
+[Build Version](https://magnificent-mermaid-bf6191.netlify.app/)
 
 ## Project Specifications
 
